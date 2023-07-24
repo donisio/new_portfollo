@@ -418,3 +418,38 @@ button:focus {
   font-weight: bold;
   filter: brightness(70%);
 }
+
+/* Arrow up */
+.arrow-up {
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px #3b82f620;
+}
+
+/* footer */
+#contact {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  transition: all 250ms ease-in;
+}
+.contact__link:hover {
+  color: var(--color-accent);
+}
