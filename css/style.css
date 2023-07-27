@@ -329,7 +329,7 @@ button:focus {
   white-space: nowrap;
 }
 
-.category__selected {
+.category--selected {
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
@@ -358,12 +358,23 @@ button:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 250ms ease-out;
+}
+
+.projects.anim_out {
+  opacity: 0;
+  transform: scale(0.96) translate(20px);
 }
 
 .project {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+}
+
+.project__view {
+  display: none;
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
 }
 
 .project__img {
