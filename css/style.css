@@ -22,6 +22,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0px;
@@ -339,6 +342,7 @@ button:focus {
   opacity: 1;
   top: 4px;
 }
+
 .category__count {
   opacity: 0;
   position: absolute;

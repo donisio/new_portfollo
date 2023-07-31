@@ -37,13 +37,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header" class="section">
       <div class="header__logo">
         <img class="header__logo_img" src="images/favicon.ico" alt="Logo" />
-        <h1><a class="header__log__titel" href="#home">Dionisio</a></h1>
+        <h1><a class="header__log__titel" href="#">Dionisio</a></h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -52,9 +53,9 @@
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
           <li>
-            <a class="header__menu__item" href="#testimonial">Testimonials</a>
+            <a class="header__menu__item" data-target="testimonial" href="#testimonial">Testimonials</a>
           </li>
-          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+          <li><a class="header__menu__item" data-target="contact" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <button class="heaer__toggle" aria-label="메뉴 토글">
@@ -65,7 +66,7 @@
     <!-- Main -->
     <main>
       <!-- Home -->
-      <section id="home">
+      <section id="home" class="section">
         <div class="home_container">
         <img
           class="home__avatar"
