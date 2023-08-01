@@ -24,6 +24,7 @@ const sectionIds = [
   '#contact',
 ];
 const sections = sectionIds.map(id => document.querySelector(id));
+console.log(sections);
 const navItems = sectionIds.map(id =>
   document.querySelector(`.header__menu__item[href="${id}"]`)
 );
